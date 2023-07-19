@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="graphics/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="noise"></div>
+    
+    
+    <main>
+        <h1>Tip Calculator</h1>
+        <div>
+            <div class="colorLines blue"></div>
+            <div class="colorLines yellow"></div>
+            <div class="colorLines red"></div>
+            
+            <div class="container">
+            <div class="display">
+                <p><span>Bill:</span><span id="billDisplay">$0.00</span></p>
+                <p><span>Tip:</span><span id="tipDisplay">$0.00</span></p>
+                <p><span>SubTotal:</span><span id="subtotalDisplay">$0.00</span></p>
+                <p><span>GST (<span id="gstDisplay">5%</span>):</span><span id="taxesDisplay">$0.00</span></p>
+                <p><span>Total:</span><span id="totalDisplay">$0.00</span></p>
+                <p><span>Diners:</span><span id="dinersDisplay">1</span></p>
+                <p><span>Split:</span><span id="splitDisplay">1</span></p>
+                
+            </div>
+            <form>
+                <fieldset>
+                    <div class="costContainer">
+                        <div class="label">
+                            <label for="cost">Total Cost of the Meal</label>
+                            <button type="button" class="info-button"></button>
+                        </div>
+                        <input id="cost" name="cost" type="text" value="0" autofocus>
+                        <div class="keyboard"></div>
+                    </div>
+                </fieldset>
+
+                
+                <fieldset>
+                    <div class="label">
+                        <label for="noDiners">Number of Dinners</label>
+                        <button class="info-button"></button>
+                    </div>
+                    <div class="dinners-container">
+                        <button id="subtractOne" class="key" type="button">-</button>
+                        <input id="noDiners" name="noDiners" type="number" min="1" value="1" required>
+                        <button id="addOne" class="key" type="button">+</button>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="label">
+                        <label for="percentage">Tip percentage</label>
+                        <button class="info-button"></button>
+                    </div> 
+                    <div>
+                        <div class="display">15%</div>
+                        <input id="percentage" name="percentage" type="range" list="values" min="5" max="30" value="15" step="5" tabindex="0">
+                        <datalist id="values">
+                            <option value="5" label="5%"></option>
+                            <option value="30" label="30%"></option>
+                        </datalist>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <div class="label">
+                        <label for="province">Province</label>
+                        <button class="info-button"></button>
+                    </div>
+                    <select id="province" name="province">
+                        <option value="5">Alberta</option>
+                        <option value="12">British Columbia</option>
+                        <option value="12">Manitoba</option>
+                        <option value="15">New Brunswick</option>
+                        <option value="15">Newfoundland and Labrador</option>
+                        <option value="5">Northwest Territories</option>
+                        <option value="15">Nova Scotia</option>
+                        <option value="5">Nunavut</option>
+                        <option value="13">Ontario</option>
+                        <option value="15">Prince Edward Island</option>
+                        <option value="14.975">Quebec</option>
+                        <option value="11">Saskatchewan</option>
+                        <option value="5">Yukon</option>
+                    </select>       
+                </fieldset>
+            </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
