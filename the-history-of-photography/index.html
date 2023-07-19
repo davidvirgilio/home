@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <script src="script.js" defer></script>
+    <title>Timeline | By David Virgilio</title>
+</head>
+<body>
+    <header>
+        <!-- This div is only to keep the heading and the bar together. -->
+        <div> 
+            <h1><a href="index.html">The History of Photography</a></h1>
+            <!--  Colorful bar under the title. It's only used for styling -->
+            <div class="color-ribbon">
+                <div class="pink"></div>
+                <div class="purple"></div>
+                <div class="blue"></div>
+                <div class="green"></div>
+                <div class="yellow"></div>
+                <div class="red"></div>
+            </div>
+        </div>
+        <!-- Navigation with buttons instead of a elements. -->
+        <nav class="buttons">
+            <button id="article1NavButton" type="button" class="pink">Intro</button>
+            <button id="article2NavButton" type="button" class="purple">16th Century</button>
+            <button id="article3NavButton" type="button" class="blue">19th Century</button>
+            <button id="article4NavButton" type="button" class="green">1830s - 1840s</button>
+            <button id="article5NavButton" type="button" class="yellow">1880</button>
+            <button id="article6NavButton" type="button" class="red">21th Century</button>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- The intro contains the display class which display the article and hide the rest. -->
+        <article class="pink display">
+
+            <!-- Div to keep style the bar buttons. I used h2 headings first. However, I decided to used buttons because of the assignment's instructions.-->
+            <div class="heading">
+                <button id="article1Button" class="articleButton">Introduction</button>
+            </div>
+            
+            <!-- Main content of each section. -->
+            <div class="frame">
+
+            <!-- I tried to emulate an Instagram post with a user profile heading, the picture and the description.-->
+                <!-- User profile -->
+                <div class="user-container">
+                    <img alt="Colorful camera shutter" src="img/shutter.svg">
+                    <p><a title="Visit the picture source" target="_blank" href="https://www.pexels.com/photo/grey-and-black-camera-on-green-background-1983037/">Alex Andrews</a></p>
+                </div>
+
+                <!-- Picture -->
+                <img class="picture" alt="Silver and black camera on green background" src="img/camera.jpg">
+
+                <!-- Likes!! -->
+                <div class="icon-container">
+                    <button class="icon-heart icon"></button>
+                    <button class="icon-message icon"><a target="_blank" href="https://wa.me/18254374324"></a></button>
+                </div>
+
+                <!-- Content -->
+                <div class="post-container">
+                    <h2>Photography is Art</h2>
+                    <p>The history of photography is a testament to human creativity and innovation. It has undergone remarkable transformations that have change our perception and documentation of the world around us. By capturing moments frozen in time, photography remains an invaluable medium that preserves memories, communicates stories, and inspires countless generations to come. On this page you will discover a summary of the key milestones in the history of photography, highlighting its transformative impact on society and visual culture.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- The same for the following. I tried to create the HTML content with Javascript to avoid repetition, but it has being taking me too much time.Likely next time.-->
+
+        <article class="purple">
+
+            <div class="heading">
+                <button id="article2Button" class="articleButton">16th Century</button>
+                <button class="icon close hide"></button>
+            </div>
+
+            <div class="frame hide">
+
+                <div class="user-container">
+                    <img alt="Colorful camera shutter" src="img/shutter.svg">
+                    <p><a title="Visit the picture source" target="_blank" href="https://snl.no/camera_obscura">Yan Krukau</a></p>
+                </div>
+
+                <img class="picture" title="Grey and black camera on green background" alt="Illustration of a man projecting a building with a camera obscura." src="img/camera-obscura.jpg">
+
+                <div class="icon-container">
+                    <button class="icon-heart icon"></button>
+                    <button class="icon-message icon"><a target="_blank" href="https://wa.me/18254374324"></a></button>
+                </div>
+
+                <div class="post-container">
+                    <h2>Invention of the Camera Obscura</h2>
+                    <p>The origins of photography can be traced back to the invention of the camera obscura, a device that projected images onto a screen or surface. In the 16th century, artists and scientists began using this precursor to the camera to aid in drawing and painting. However, it was not until later advancements that the camera obscura paved the way for the development of true photography.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="blue">
+
+            <div class="heading ">
+                <button id="article3Button" class="articleButton">19th Century</button>
+                <button class="icon close hide"></button>
+            </div>
+
+            <div class="frame hide">
+
+                <div class="user-container">
+                    <img alt="Colorful camera shutter" src="img/shutter.svg">
+                    <p><a title="Visit the picture source" target="_blank" href="https://www.flickr.com/photos/rfmcdonald/4341757469">Nicéphore Niépce</a> </p>
+                </div>
+
+                <img class="picture" title="View from the Window at Le Gras" alt="Blurry picture of the view of a street in France." src="img/first-photograph.jpg">
+
+                <div class="icon-container">
+                    <button class="icon-heart icon"></button>
+                    <button class="icon-message icon"><a target="_blank" href="https://wa.me/18254374324"></a></button>
+                </div>
+
+                <div class="post-container">
+                    <h2>First Photographic Process</h2>
+                    <p>The birth of photography as we know it today can be attributed to the efforts of several pioneers in the 19th century. In 1826, <a title="Nicéphore Niépce's biography." href="https://www.britannica.com/biography/Nicephore-Niepce">Joseph Nicéphore Niépce</a>, a French inventor, created the world's first permanent photograph using a camera obscura and a photosensitive material called bitumen of Judea. This groundbreaking achievement laid the foundation for subsequent photographic advancements.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="green">
+
+            <div class="heading">
+                <button id="article4Button" class="articleButton">1830s- 1840s</button>
+                <button class="icon close hide"></button>
+            </div>
+
+            <div class="frame hide">
+
+                <div class="user-container">
+                    <img alt="Colorful camera shutter" src="img/shutter.svg">
+                    <p><a title="Visit the picture source" target="_blank" href="https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_des_Arts_et_M%C3%A9tiers_-_Chambre_%C3%A0_tiroir_pour_daguerr%C3%A9otype.jpg">Louis Daguerre</a></p>
+                </div>
+
+                <img class="picture" title="Drawer chamber for daguerreotype." alt="An old brown daguerreotype camera made of wood." src="img/daguerreotype.jpg">
+
+                <div class="icon-container">
+                    <button class="icon-heart icon"></button>
+                    <button class="icon-message icon"><a target="_blank" href="https://wa.me/18254374324"></a></button>
+                </div>
+
+                <div class="post-container">
+                    <h2>Daguerreotype and Calotype.</h2>
+                    <p>In the 1830s, Louis Daguerre, a French artist and inventor, introduced the <cite>daguerreotype</cite>, an early photographic process. Daguerreotypes produced highly detailed and one-of-a-kind images on a silver-plated copper surface. Around the same time, English scientist William Henry Fox Talbot developed the calotype, a negative-positive process that allowed for multiple prints. These advancements marked significant milestones in the democratization of photography.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="yellow">
+
+            <div class="heading">
+                <button id="article5Button" class="articleButton">1880</button>
+                <button class="icon close hide"></button>
+            </div>
+
+            <div class="frame hide">
+
+                <div class="user-container">
+                    <img alt="Colorful camera shutter" src="img/shutter.svg">
+                    <p><a title="Visit the picture source" target="_blank" href="https://commons.wikimedia.org/wiki/File:Film_strip.jpg">Bart Everson</a></p>
+                </div>
+
+                <img class="picture" title="Black Treasures" alt="A flexible photographic film." src="img/film.jpg">
+
+                <div class="icon-container">
+                    <button class="icon-heart icon"></button>
+                    <button class="icon-message icon"><a target="_blank" href="https://wa.me/18254374324"></a></button>
+                </div>
+
+                <div class="post-container">
+                    <h2>Flexible Film</h2>
+                    <p>The late 19th century saw the introduction of flexible film, a crucial development in photography. George Eastman, an American entrepreneur, revolutionized the field with the invention of roll film in the 1880s. This innovation replaced the cumbersome glass plates and made photography more accessible to the masses. Eastman's company, Kodak, later introduced the Brownie camera, which became immensely popular and further expanded the reach of photography.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="red">
+
+            <div class="heading">
+                <button id="article6Button" class="articleButton">21th Century</button>
+                <button class="icon close hide"></button>
+            </div>
+
+            <div class="frame hide">
+
+                <div class="user-container">
+                    <img alt="Colorful camera shutter" src="img/shutter.svg">
+                    <p><a title="Visit the picture source" target="_blank" href="https://www.pexels.com/photo/unrecognizable-person-taking-photo-of-family-dinner-on-smartphone-5638701/">Askar Abayev</a></p>
+                </div>
+
+                <img class="picture" title="Unrecognizable person taking photo of family dinner on smartphone." alt="Unrecognizable person taking photo of family dinner on smartphone." src="img/smartphone.jpg">
+
+                <div class="icon-container">
+                    <button class="icon-heart icon"></button>
+                    <button class="icon-message icon"><a target="_blank" href="https://wa.me/18254374324"></a></button>
+                </div>
+
+                <div class="post-container">
+                    <h2>Digital Revolution </h2>
+                    <p>The advent of digital technology in the late 20th century brought about a revolution in photography. Digital cameras gradually replaced traditional film-based cameras, offering instant image previewing, storage, and manipulation. The rise of the internet and social media platforms further accelerated the dissemination and sharing of photographs worldwide. Today, digital photography continues to evolve, with advancements in sensor technology, image processing, and mobile photography shaping the way we capture and interact with visual imagery.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
